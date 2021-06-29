@@ -1,0 +1,53 @@
+@import url(./mobile.css);
+body {
+  margin: 0;
+}
+.grid {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 1fr 3.5fr 3.5fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "first first first first" "second third fourth fifth" "second third sixth fifth";
+  grid-gap: 24px;
+}
+.first {
+  grid-area: first;
+  background: #787885;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.48), 0px 0px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+}
+.second {
+  grid-area: second;
+  background: #ffffff;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.24), 0px 0px 32px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  margin: 0 0 24px 24px;
+}
+.third {
+  grid-area: third;
+  background: #f0f0f1;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+.fourth {
+  grid-area: fourth;
+  background: #e1e1e3;
+  border-radius: 10px;
+}
+.fifth {
+  grid-area: fifth;
+  background: #f0f0f1;
+  border-radius: 10px;
+  margin: 0 24px 24px 0;
+}
+.sixth {
+  grid-area: sixth;
+  background: #d8e6ff;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+.seventh,
+.eighth,
+.ninth {
+  display: none;
+}

@@ -1,0 +1,46 @@
+@media (min-width: 320px) and (max-width: 425px) {
+  .seventh,
+  .eighth,
+  .ninth {
+    display: block !important;
+  }
+  .grid {
+    display: grid !important;
+    height: 100vh !important;
+    grid-template-rows: 1fr 2.5fr 2.5fr 2fr 1fr !important;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr !important;
+    grid-template-areas:
+      "first first first first first first"
+      "seventh seventh seventh sixth sixth sixth"
+      "third third fourth fourth fifth fifth"
+      "eighth eighth eighth eighth ninth ninth"
+      "second second second second second second" !important;
+    grid-gap: 16px !important;
+  }
+  .seventh {
+    background: #c4daff;
+    border-radius: 10px;
+    grid-area: seventh;
+    
+  }
+  .eighth {
+    background: #f0f0f1;
+    border-radius: 10px;
+    grid-area: eighth;
+  }
+  .ninth{
+    background: #F0F0F1;
+    border-radius: 10px;
+    grid-area: ninth;
+  }
+ 
+  .second,.sixth,.third,.fifth{
+      margin: 0 !important;
+  }
+  .seventh,.third,.eighth{
+      margin-left: 16px !important;
+  }
+  .sixth, .fifth,.ninth{
+      margin-right: 16px !important;
+  }
+}
